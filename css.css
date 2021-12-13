@@ -1,0 +1,66 @@
+.tloo{
+    width: 100%;
+}
+body{
+	margin: 0 0;
+}
+.pilkaa{
+    width: 3vw;
+    position:absolute;
+    display: block;
+    bottom: 12%;
+    left: 20%;
+    animation: pilkaanimacja 4s linear infinite;
+}
+
+a{
+	all:unset;
+}
+
+@keyframes pilkaanimacja{
+    0%{
+        bottom: 12%;
+        left: 20%;
+    }
+    50%{
+    bottom: 10%;
+    left: 72%;
+    transform: rotate(1000deg);
+    }
+    100%{
+        bottom: 12%;
+        left: 20%;
+    }
+}
+
+.powrot{
+	font-size:2vw;
+	position: absolute;
+	top: 2%;
+	cursor: pointer;
+	right: 3%;
+	animation: napis 2s linear infinite;
+	
+}
+
+.powrot:hover{
+	color: red;
+}
+
+@keyframes napis{
+	0%{
+		transform: rotate(0deg);
+		
+	}
+	25%{
+		transform: rotate(180deg)
+
+	}
+	75%{
+		transform: rotate(-180deg)
+
+	}
+100%{
+	transform: rotate(0deg)
+}
+	}
